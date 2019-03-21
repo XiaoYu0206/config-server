@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    #定义转发服务规则
+    api-member:
+      #当客户端请求127.0.0.1:80/api/member开头的，都会转发到会员服务
+      path: /api/member/**
+      serviceId: xiaoyu-eureka-client-member
+      #当客户端请求127.0.0.1:80/api/order开头的，都会转发到订单服务
+    api-order:
+      path: /api/order/**
+      serviceId: xiaoyu-eureka-client-order
