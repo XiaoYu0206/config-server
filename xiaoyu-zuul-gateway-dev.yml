@@ -7,5 +7,5 @@ zuul:
       serviceId: xiaoyu-eureka-client-member
       #当客户端请求127.0.0.1:80/api/order开头的，都会转发到订单服务
     api-order:
-      path: /api/order/**
+      path: /api/order2/**
       serviceId: xiaoyu-eureka-client-order
